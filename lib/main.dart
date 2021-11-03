@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.cyan,
       ),
@@ -47,8 +48,8 @@ class _MyHomePageState extends State<MyHomePage> {
                   context,
                   PageTransition(
                     child: const DestinoPage(),
-                    type: PageTransitionType.size,
-                    alignment: Alignment.center,
+                    type: PageTransitionType.rotate,
+                    alignment: Alignment.bottomCenter,
                     duration: const Duration(milliseconds: 600),
                     reverseDuration: const Duration(milliseconds: 600),
                   ),
